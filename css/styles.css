@@ -1,0 +1,147 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --white: #fff;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Red Hat Display';
+  padding: 70px 24px;
+  background-color: var(--pale-blue);
+  color: var(--dark-blue);
+  background-image: url('../images/pattern-background-mobile.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 12px;
+}
+
+.main-img {
+  display: block;
+  max-width: 100%;
+  border-radius: 12px 12px 0 0;
+  margin: 0 auto;
+}
+
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.card-text h1 {
+  margin-top: 38px;
+  margin-bottom: 28px;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.card-text .desc {
+  color: var(--desaturated-blue);
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.annual-plan-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 18px;
+  background-color: var(--very-pale-blue);
+  border-radius: 12px;
+  margin-bottom: 22px;
+}
+
+.annual-plan-inner {
+  display: flex;
+}
+
+.annual-plan-inner img {
+  width: 46px;
+  height: 46px;
+  margin-right: 20px;
+}
+
+.annual-plan p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.annual-plan .main-text {
+  font-weight: 900;
+}
+
+.annual-plan .secondary-text {
+  color: var(--desaturated-blue);
+}
+
+.change-link {
+  font-size: 14px;
+  color: var(--bright-blue);
+}
+
+.change-link:hover {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--bright-blue);
+  text-align: center;
+  text-decoration: none;
+  color: var(--white);
+  height: 50px;
+  line-height: 50px;
+  font-weight: 500;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #766cf1;
+}
+
+.btn-cancel {
+  text-align: center;
+  text-decoration: none;
+  color: var(--dark-blue);
+  height: 50px;
+  line-height: 50px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.btn-cancel:hover {
+  color: #1e2841;
+}
+
+@media screen and (min-width: 451px) {
+  html {
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  body {
+    padding: 0;
+    /*
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    */
+  }
+
+  .card {
+    max-width: 450px;
+  }
+}
